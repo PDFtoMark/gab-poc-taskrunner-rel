@@ -1,0 +1,13 @@
+name: Runner label probe
+on:
+  push:
+    branches: [labelprobe]
+jobs:
+  u2004:
+    runs-on: ubuntu-20.04
+    steps:
+      - run: echo "ubuntu-20.04 runner available: $(uname -a)"
+  ulatest:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "ubuntu-latest runner available: $(uname -a)"
